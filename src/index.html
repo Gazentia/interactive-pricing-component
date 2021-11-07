@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Interactive pricing component</title>
+  </head>
+
+  <body>
+    <div class="bg-img"></div>
+      <div class="container">
+        <div class="header">
+          <img
+            class="bg-circle"
+            src="./assets/images/pattern-circles.svg"
+            alt=""
+          />
+          <div class="header__title">Simple, traffic-based pricing</div>
+          <div class="header__subtitle">
+            Sign-up for our 30-day trial. No credit card required.
+          </div>
+        </div>
+        <div class="card card-width">
+          <div class="card__header">
+            <div class="card__pageview">
+              <span id="amountpageView">1</span>K Pageviews
+            </div>
+            <div class="card__slider form__control">
+              <input class="form__slider" id="viewAmtValue" type="range" min="1" max="100" value="1" step="1">
+            </div>
+            <div class="card__price">
+              <span class="card__number"
+                >$</span><span class="card__number" id="priceService">16.00</span>
+              <span class="card__unit">/ <span id="unitDate">month</span></span>
+            </div>
+            <div class="card__bill">
+              Monthly Billing <label class="form__switch card__switch"><input type="checkbox" id="switchBillDate"><span class="form__switch--round"></span></span></label> Yearly Billing <div class="badge badge--primary badge--overlay"><span class="hide-for-mobile">25% discount</span><span class="hide-for-desktop">-25%</span></div>
+            </div>
+            <div class="card__footer">
+              <ul class="card__items">
+                <li class="card__item card__item--check">Unlimited websites</li> 
+                <li class="card__item card__item--check">100% data ownership</li> 
+                <li class="card__item card__item--check">Email reports</li>
+              </ul>
+              <div class="card__buttons">
+                <button type="button" class="btn btn--primary">Start my trial</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/Gazentia/Gazentia">Gazentia</a>.
+      </div>
+  </body>
+</html>

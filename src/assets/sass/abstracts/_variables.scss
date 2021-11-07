@@ -1,0 +1,39 @@
+// Colors
+$softCyan: hsl(174, 77%, 80%); // Full Slider Bar
+$strongCyan: hsl(174, 86%, 45%); // Slider Backround
+$lightGrayishRed: hsl(14, 92%, 95%); // Discount Background
+$lightRed: hsl(15, 100%, 70%); // Discount Text
+$paleBlue: hsl(226, 100%, 87%); // CTA Text
+$veryPaleBlue: hsl(230, 100%, 99%); // Main Background
+$lightGrayishBlue1: hsl(224, 65%, 95%); // Empty Slider Bar
+$lightGrayishBlue2: hsl(223, 50%, 87%); // Toggle Background
+$grayishBlue: hsl(225, 20%, 60%); // Text
+$darkDesaturatedBlue: hsl(227, 35%, 25%); // Text & CTA Background
+$white: #ffffff; // Pricing Component Background
+
+// Font Sizes
+$font-sm: 0.9375rem; // 15px 
+$font-md: 1.3125rem; //21px
+$font-lg: 2.0625rem; // 33px
+$font-xlg: 2.5625rem; // 41px 
+
+// Breakpoints
+// 576px, 768px, 992px, 1200px, 1400px
+$breakpoints-up: (
+  xs: 0,
+  sm: "36rem",
+  md: "48rem",
+  lg: "62rem",
+  xl: "75rem",
+  xxl: "87.5rem",
+);
+
+// 359px, 575px, 767px, 991px, 1199px, 1399px
+$breakpoints-down: (
+  xs: "22.4375rem",
+  sm: "35.9375rem",
+  md: "47.9375rem",
+  lg: "61.9375rem",
+  xl: "74.9375rem",
+  xxl: "87.4375rem"
+);

@@ -1,0 +1,15 @@
+.hide-for-mobile {
+  @include breakpoint-down("sm") {
+    display: none !important;
+  }
+}
+
+.hide-for-desktop {
+  @include breakpoint-up("sm") {
+    display: none !important;
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
+}

@@ -1,0 +1,19 @@
+.badge {
+    padding: 5px 8px;
+    border-radius: 25px;
+    &--primary {
+        color: $lightRed;
+        background-color: $lightGrayishRed;
+    }
+
+    &--overlay {
+        position: absolute;
+        right: -26px;
+        top: -22px;
+
+        @include breakpoint-up("sm") {
+            right: -110px;
+            top: 0;
+        }
+    }
+}

@@ -1,0 +1,87 @@
+.form {
+    &__control {
+        width: 100%;
+    }
+
+    &__switch {
+        position: relative;
+        display: inline-block;
+        width: 48px;
+        height: 24px;
+
+        input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+
+            &:checked + .form__switch--round {
+                background-color: rgba($strongCyan, 0.5);
+                &::before {
+                    transform: translateX(22px);
+                }
+            }
+        }
+
+        &--round {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 17px;
+            background-color: $lightGrayishBlue1;
+            transition: all 200ms ease-in-out;
+
+            &:before {
+                position: absolute;
+                border-radius: 50%;
+                content: "";
+                height: 16px;
+                width: 16px;
+                left: 5px;
+                bottom: 4px;
+                background-color: $white;
+                transition: all 200ms ease-in-out;
+            }
+        }
+    }
+
+    &__slider {
+        margin: 16px 0 40px 0;
+        &[type="range"] {
+            width: 100%;
+            appearance: none;
+            height: 10px;
+            border-radius: 5px;
+            background: linear-gradient(90deg, rgba($strongCyan, 0.5) 50%, rgba($lightGrayishBlue1, 1) 0);
+
+            &:focus {
+                outline: none;
+            }
+
+            &::-webkit-slider-thumb {
+                appearance: none;
+                width: 40px;
+                height: 40px;
+                cursor: pointer;
+                background-image: url("../../images/icon-slider.svg");
+                background-repeat: no-repeat;
+                background-size: 20px;
+                background-position: center;
+                background-color: $strongCyan;
+                border-radius: 50%;
+                box-shadow: 0 10px 20px 0 rgba($strongCyan, 0.5);
+                transition: all 200ms ease-in-out;
+                
+                &:hover {
+                    background-color: #78ebdc;
+                }
+
+                &:active {
+                    background-color: #23aca2;
+                }
+            }
+        }
+    }
+}

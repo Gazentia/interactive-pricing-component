@@ -1,0 +1,150 @@
+.card {
+    background-color: $white;
+    padding: 40px 45px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px 0 rgba($darkDesaturatedBlue, 0.2);
+    font-size: 0.8125rem;
+    overflow: hidden;
+
+    &__header {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        grid-template-areas:
+            "pageview"
+            "slider"
+            "price"
+            "bill"
+            "footer";
+
+        @include breakpoint-up("md") {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, auto);
+            grid-template-areas:
+                "pageview price"
+                "slider slider"
+                "bill bill"
+                "footer footer";
+        }
+    }
+
+    &__items {
+        list-style: none;
+        margin: 40px 0 50px 0;
+        padding-left: 0;
+        text-align: center;
+
+        @include breakpoint-up("md") {
+            text-align: left;
+            margin: 0;
+        }
+    }
+
+    &__item--check {
+        &::before {
+            display: inline-block;
+            content: "";
+            height: 15px;
+            width: 15px;
+            background-image: url("../../images/icon-check.svg");
+            background-repeat: no-repeat;
+            background-size: 15px;
+            background-position: center;
+            margin-right: 16px;
+        }
+    }
+
+    &__item {
+        margin-bottom: 20px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        @include breakpoint-up("md") {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__slider {
+        grid-area: slider;
+    }
+
+    &__pageview {
+        font-size: $font-sm;
+        font-weight: 800;
+        margin-bottom: 30px;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        grid-area: pageview;
+
+        @include breakpoint-up("md") {
+            margin-bottom: 0;
+            align-self: center;
+            justify-self: start;
+        }
+    }
+
+    &__price {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        grid-area: price;
+
+        @include breakpoint-up("md") {
+            margin-bottom: 0;
+            align-self: center;
+            justify-self: end;
+        }
+    }
+
+    &__number {
+        display: inline-block;
+        margin-right: 5px;
+        font-size: 2rem;
+        font-weight: 800;
+        color: $darkDesaturatedBlue;
+    }
+
+    &__bill {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 40px;
+        position: relative;
+        grid-area: bill;
+
+        & > label {
+            margin: 0 10px;
+        }
+    }
+
+    &__footer {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        grid-area: footer;
+
+        &:before {
+            content: "";
+            position: absolute;
+            height: 1px;
+            width: 200%;
+            border-top: 1px solid rgba($darkDesaturatedBlue, 0.2);
+            left: -50%;
+            top: 0;
+        }
+
+        @include breakpoint-up("md") {
+            padding-top: 40px;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}
