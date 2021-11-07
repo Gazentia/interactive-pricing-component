@@ -18,7 +18,7 @@
 
 ## About The Repository
 
-This is my  <a href="https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN"><b> frontendmentor</b></a>'s challenge solution which get development by my <a href="https://github.com/Gazentia/frontend-webpack-boilerplate"><b>frontend webpack boilerplate<b></a>
+This is my  <a href="https://www.frontendmentor.io/challenges/interactive-pricing-component-t0m8PIyY8"><b> frontendmentor</b></a>'s challenge solution which get development by my <a href="https://github.com/Gazentia/frontend-webpack-boilerplate"><b>frontend webpack boilerplate<b></a>
 
 Here's why:
 - Practicing Web development skills such as SCSS, CSS, JS, etc.
